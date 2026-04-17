@@ -4,10 +4,24 @@ using UnityEngine;
 
 public class CalculosPersonalizados : MonoBehaviour
 {
+    public float num1;
+    public float num2;
+    public float suma;
+    public float resta;
+    public float multiplicacion;
+    public float division;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        suma = num1 + num2; 
+        resta = num1 - num2;
+        multiplicacion = num1 * num2;
+        division = num1/num2;
+        Debug.Log("El resultado de la suma entre  " + num1 + " y " + num2 + " es: " + suma);
+        Debug.Log("El resultado de la resta entre  " + num1 + " y " + num2 + " es: " + resta);
+        Debug.Log("El resultado de la division entre  " + num1 + " y " + num2 + " es: " + division);
+        Debug.Log("El resultado de la multiplicacion entre  " + num1 + " y " + num2 + " es: " + multiplicacion);
     }
 
     // Update is called once per frame
